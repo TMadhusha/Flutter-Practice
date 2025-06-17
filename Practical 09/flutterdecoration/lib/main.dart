@@ -5,6 +5,8 @@ void main() {
 }
 
 class MyApp extends StatelessWidget {
+  const MyApp({super.key});
+
   // This widget is the root of your application.
   @override
   Widget build(BuildContext context) {
@@ -14,7 +16,7 @@ class MyApp extends StatelessWidget {
         appBar: AppBar(title: Text('GestureDetector Example')),
         body: Center(
           child: GestureDetector(
-            onTap: (){
+            onTap: () {
               print('Container tapped');
             },
             child: Container(
@@ -24,7 +26,7 @@ class MyApp extends StatelessWidget {
               child: Center(
                 child: Text(
                   'Tap Me',
-                  style: TextStyle(color: Colors.white,fontSize: 16),
+                  style: TextStyle(color: Colors.white, fontSize: 16),
                 ),
               ),
             ),
@@ -34,4 +36,3 @@ class MyApp extends StatelessWidget {
     );
   }
 }
-
