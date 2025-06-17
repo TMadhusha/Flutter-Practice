@@ -12,7 +12,7 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       title: 'Hello World Flutter Application',
-      theme: ThemeData(primarySwatch: Colors.blue),
+      theme: ThemeData(primarySwatch: Colors.grey),
       home: MyHomePage(title: 'Home Page'),
     );
   }
@@ -29,10 +29,7 @@ class MyHomePage extends StatelessWidget {
           title: Text(
             this.title,
             style: TextStyle(
-              fontSize: 24,
-              fontWeight: FontWeight.bold,
-              color: Colors.indigoAccent,
-            ),
+                fontSize: 24, fontWeight: FontWeight.bold, color: Colors.red),
           ),
           actions: [
             IconButton(
